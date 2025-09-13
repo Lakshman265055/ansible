@@ -8,4 +8,4 @@
 
 
 #Command used to run this playbook
-#
+#ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-from-args.yaml -e "Name=chotu age=12"
