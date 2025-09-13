@@ -1,0 +1,10 @@
+- name: using variables in ansible
+  hosts: web
+  vars:
+    Name: Lakshman
+    age: 25
+    nation: indian
+  tasks:
+  - name: printing vars
+    ansible.builtsin.debug:
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
