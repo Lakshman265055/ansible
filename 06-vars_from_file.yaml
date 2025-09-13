@@ -1,0 +1,10 @@
+- name: taking variables from var_file
+  hosts: web
+  vars_files:
+  - vars.yaml
+  become: yes
+  tasks:  
+  - name: printing vars
+    ansible.builtin.debug:
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
+
