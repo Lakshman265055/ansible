@@ -1,4 +1,5 @@
 - name: using variables in ansible
+  become: yes
   hosts: web
   vars:
     Name: Lakshman
@@ -6,5 +7,5 @@
     nation: indian
   tasks:
   - name: printing vars
-    ansible.builtsin.debug:
+    ansible.builtin.debug:
       msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
