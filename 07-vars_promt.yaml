@@ -2,11 +2,11 @@
   hosts: web
   vars_prompt:
   - name: Name
-    promt: please enter the Name
+    prompt: please enter the Name
   - name: age
-    promt: please enter age
+    prompt: please enter age
   - name: nation
-    promt: please enter nation
+    prompt: please enter nation
   become: yes
   tasks:  
   - name: printing vars
