@@ -2,9 +2,9 @@
   become: yes
   hosts: web
   vars:
-  Name: Lakshman
-  age: 25
-  nation: india
+   Name: Lakshman
+   age: 25
+   nation: india
   tasks:
   - name: printing vars
     ansible.builtin.debug:
