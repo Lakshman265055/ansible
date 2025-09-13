@@ -11,6 +11,11 @@
       msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
   - name: printing vars in task 2
     vars:
-     Name: Ramu
+     Name: Ramu   #task level variables are overided 
     ansible.builtin.debug:
-      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"  
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
+  - name: printing vars in task 3
+    vars:
+     #Name: Ramu   #task level variables are overided 
+    ansible.builtin.debug:
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"    
