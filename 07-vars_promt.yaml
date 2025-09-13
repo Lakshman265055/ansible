@@ -1,6 +1,6 @@
 - name: taking variables from var_file
   hosts: web
-  vars_promt:
+  vars_prompt:
   - name: Name
     promt: please enter the Name
   - name: age
