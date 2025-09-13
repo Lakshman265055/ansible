@@ -1,0 +1,13 @@
+- name: paly-1
+  hosts: web
+  task:
+  - name: paly-1
+    ansible.builtin.debug:
+      msg= "from play 1"
+
+- name: play2
+  hosts: web
+  task:
+  - name: play-2
+    ible.builtin.debug:
+      msg " from paly2"
