@@ -1,0 +1,15 @@
+- name: taking variables from var_file
+  hosts: web
+  become: yes
+  tasks:  
+  - name: printing vars
+    ansible.builtin.debug:
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
+
+
+
+# this is what added for this file in inventory.ini
+# [web:vars]
+# Name: madhu
+# age: 22
+# nation: india
