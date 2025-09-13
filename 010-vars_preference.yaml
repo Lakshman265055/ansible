@@ -15,4 +15,13 @@
       msg: "Hi, this is {{Name}}"
 
 
-#command to run
+#command to run:  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-from-args.yaml -e "Name=chotu"
+
+# preferance:
+
+# 1) command line arguments
+# 2) task level
+# 3) vars_from_files
+# 4) vars_from_promt
+# 5) play
+# 6) inventory
