@@ -1,0 +1,14 @@
+- name: taking variables from var_file
+  hosts: web
+  vars_promt:
+  - name: Name
+    promt: please enter the Name
+  - name: age
+    promt: please enter age
+  - name: nation
+    promt: please enter nation
+  become: yes
+  tasks:  
+  - name: printing vars
+    ansible.builtin.debug:
+      msg: "Hi, this is {{Name}} and my age is {{age}} belongs to {{nation}}"
