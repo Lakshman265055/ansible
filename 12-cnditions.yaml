@@ -1,0 +1,20 @@
+- name: using condition in ansible
+  hosts: local
+  connection: local
+  var_prompt:
+   name: number
+   prompt: Please enter number
+   private: false
+   tasks:
+   - name: print if number is less than 10
+     ansible.builtin.debug:
+      msg: "given nuber is {{number}} is less than 10"
+     when:  number < 10
+
+   - name: print if number is gater than 10
+     ansible.builtin.debug:
+      msg: "given nuber is {{number}} is gater than 10"
+     when:  number > 10     
+
+    
+      
