@@ -1,0 +1,13 @@
+- name: use of filters in ansible
+  hosts: web
+  become: yes
+  tasks:
+  - name : creating filters
+    vars:
+      greet: "Hello Lakshman"
+    ansible.builtin.debug:
+      msg: "{{greet | upper}}"
+     
+
+
+
