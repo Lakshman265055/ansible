@@ -9,7 +9,7 @@
      - mysql
      - backend
      - frontend
-   zone: lakshmangundapu.icu
+     zone: lakshmangundapu.icu
 
 
    tasks:
