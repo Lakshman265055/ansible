@@ -1,0 +1,20 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  vars:
+   Name: Lakshman
+   age: 25
+   languages:
+   - telugu
+   - english
+   - hindi
+   speak: true
+   tools:
+    ci: jenkins
+    cm: nasible
+    cloud: aws
+  task: 
+  - name: printing vars
+    ansible.builtin.debug:
+      msg: " hi this is {{Name}} my age is {{age}} languages know are {{languages}} speaking {{true}}, tools knowns{{tools}}"
+
